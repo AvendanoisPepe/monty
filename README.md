@@ -37,12 +37,24 @@ julien@ubuntu:~/monty$
 ```
 ------------
 
-## List of files.
+## List of poinst.
 
-|  Archives | what does this file do?  | level |
+|  Point | What is done at this point? | level |
 | ------------ | ------------ | ------------ |
-|  |  | Mandatory |
-
+| 0. push, pall | Implement the push and pall opcodes. | Mandatory |
+| 1. pint | Implement the pint opcode. | Mandatory |
+| 2. pop | Implement the swap opcode. |  Mandatory |
+| 3. swap  | Implement the swap opcode. |  Mandatory |
+| 4. add | Implement the add opcode. |  Mandatory |
+| 5. nop | Implement the nop opcode. |  Mandatory |
+| 6. sub | Implement the sub opcode. |  Advanced |
+| 7. div | Implement the div opcode. |  Advanced |
+| 8. mul | Implement the mul opcode. |  Advanced |
+| 9. mod | Implement the mod opcode. |  Advanced |
+| 10. comments | Every good language comes with the capability of commenting. When the first non-space character of a line is #, treat this line as a comment (don’t do anything). | Advanced |
+| 11. pchar | Implement the pchar opcode. | Advanced |
+| 12. pstr | Implement the pstr opcode. | Advanced |
+| 13. rotl | Implement the rotl opcode. | Advanced |
 
 ------------
 
@@ -50,7 +62,7 @@ julien@ubuntu:~/monty$
 
 ------------
 
-|  Archives | comments   | level |
+|  Point | comments   | level |
 | ------------ | ------------ | ------------ |
 |  |  | Advanced |
 
