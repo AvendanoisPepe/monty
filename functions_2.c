@@ -11,7 +11,7 @@ int check_push(char *op, __attribute__((unused))unsigned int line)
 
 	while (op[i])
 	{
-		if (!(isdigit(op[i])))
+		if (!(isdigit(op[i])) && (op[0] != '-' && op[0] != '+'))
 		{
 			return (-1);
 		}
