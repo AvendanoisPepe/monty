@@ -40,14 +40,14 @@ int main(int argc, char *argv[])
  *@line:-int argument
  * Return: Always EXIT_SUCCESS.
  */
-void is_opt(char *buffer, __attribute__((unused))stack_t **head,
-			__attribute__((unused))unsigned int line)
+void is_opt(char *buffer, stack_t **head, unsigned int line)
 {
 	int idx = 0;
 	char *op = NULL;
 
 	instruction_t opts[] = {
-		{"push", push}, {"pall", pall}, {"pint", pint}, {NULL, NULL}};
+		{"push", push}, {"pall", pall}, {"pint", pint}
+		, {"pop", pop}, {NULL, NULL}};
 	op = strtok(buffer, " \t \n");
 	while (opts[idx].opcode)
 	{

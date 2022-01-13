@@ -49,17 +49,16 @@ void is_opt(char *buffer, stack_t **head, unsigned int line);
  *@line:-int
  * Return: long linked list
  */
-void push(__attribute__((unused)) stack_t **head,
-		  __attribute__((unused)) unsigned int line);
+void push(stack_t **head, unsigned int line);
 /**
  *pall:-function print doublylinked list
  *@head:-Dlink
  *@line:-int
  * Return: long linked list
  */
-void pall(__attribute__((unused)) stack_t **head,
-		  __attribute__((unused)) unsigned int line);
+void pall(stack_t **head, unsigned int line);
 void pint(stack_t **stack, unsigned int line_number);
+void pop(stack_t **head,unsigned int line);
 int empty_str(char *str);
 void err_push(unsigned int line);
 stack_t *head;
