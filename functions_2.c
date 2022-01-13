@@ -4,7 +4,7 @@
  *@line:-n line
  *@op:-argument
  */
-void check_push(char *op, __attribute__((unused))unsigned int line)
+int check_push(char *op, __attribute__((unused))unsigned int line)
 {
 	int i = 0;
 
@@ -12,12 +12,11 @@ void check_push(char *op, __attribute__((unused))unsigned int line)
 	{
 		if (!(isdigit(op[i])))
 		{
-			fprintf(stderr, "L%d: usage: push integer\n", line);
-			fclose(red);
-			exit(EXIT_FAILURE);
+			return (-1);
 		}
 		i++;
 	}
+	return (0);
 }
 /**
  * pint - entry point

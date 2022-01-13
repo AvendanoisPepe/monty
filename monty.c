@@ -56,10 +56,19 @@ void is_opt(char *buffer, __attribute__((unused))stack_t **head,
 			op = strtok(NULL, " \t \n");
 			if (op)
 			{
-				check_push(op, line);
-				line = atoi(op);
-				opts[idx].f(head, line);
-				break;
+				if (check_push(op, line) != -1)
+				{
+					line = atoi(op);
+					opts[idx].f(head, line);
+					break;
+				}
+				else
+				{
+					fprintf(stderr, "L%d: usage: push integer\n", line);
+					fclose(red);
+					free_dlistint(*head);
+					exit(EXIT_FAILURE);
+				}
 			}
 			else
 			{

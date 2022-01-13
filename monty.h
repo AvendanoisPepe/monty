@@ -41,7 +41,7 @@ stack_t *add_dnodeint(stack_t **head, const int n);
 void tok(char *buffer);
 size_t print_dlistint(const stack_t *h);
 void free_dlistint(stack_t *head);
-void check_push(char *op, unsigned int line);
+int check_push(char *op, unsigned int line);
 void is_opt(char *buffer, stack_t **head, unsigned int line);
 /**
  *push:-function add new nod doublylinked list
