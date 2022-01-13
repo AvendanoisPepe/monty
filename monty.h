@@ -61,5 +61,6 @@ void pint(stack_t **stack, unsigned int line_number);
 void pop(stack_t **head,unsigned int line);
 int empty_str(char *str);
 void err_push(unsigned int line);
+char buffer[1024];
 stack_t *head;
 #endif

@@ -8,7 +8,18 @@
 void push(__attribute__((unused))stack_t **head,
 			__attribute__((unused))unsigned int line)
 {
-	add_dnodeint(head, line);
+	char *op = NULL;
+
+	op = strtok(NULL, " \t \n");
+	if (check_push(op, line) != -1)
+	{
+		line = atoi(op);
+		add_dnodeint(head, line);
+	}
+	else
+	{
+		err_push(line);
+	}
 }
 /**
  *pall:-function print doublylinked list

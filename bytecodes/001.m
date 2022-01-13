@@ -1,1 +1,2 @@
-push 0 Push 0 onto the stack
+push 98
+pint Holberton

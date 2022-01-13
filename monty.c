@@ -10,7 +10,7 @@ int main(int argc, char *argv[])
 
 	stack_t *head = NULL;
 	unsigned int line = 1;
-	char buffer[1024];
+
 
 	if (argc != 2)
 	{
@@ -53,23 +53,8 @@ void is_opt(char *buffer, stack_t **head, unsigned int line)
 	{
 		if (strcmp(opts[idx].opcode, op) == 0)
 		{
-			op = strtok(NULL, " \t \n");
-			if (op)
-			{
-				if (check_push(op, line) != -1)
-				{
-					line = atoi(op);
-					opts[idx].f(head, line);
-					break;
-				}
-				else
-					err_push(line);
-			}
-			else
-			{
-				opts[idx].f(head, line);
-				break;
-			}
+			opts[idx].f(head, line);
+			break;
 		}
 		idx++;
 	}
