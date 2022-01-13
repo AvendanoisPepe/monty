@@ -106,3 +106,26 @@ void mod(stack_t **stack, unsigned int line_number)
         exit(EXIT_FAILURE);
     }
 }
+
+/**
+ * pchar - El valor numerico lo imprime en su valor char
+ * 
+ * @stack: double linked list
+ * @line_number: number of evaluated line
+*/
+void pchar(stack_t **stack, unsigned int line_number)
+{
+    if (!(*stack))
+    {
+        fprintf(stderr, "L%d: can't pchar, stack empty\n", line_number);
+        fclose(red);
+        exit(EXIT_FAILURE);
+    }
+    else if((*stack)->n < 0 && (*stack)->n > 126)
+    {
+        fprintf(stderr, "L%d: can't pchar, value out of range\n", line_number);
+        fclose(red);
+        exit(EXIT_FAILURE);
+    }
+    printf("%c\n",(*stack)->n);
+}
