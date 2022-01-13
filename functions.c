@@ -11,15 +11,20 @@ void push(__attribute__((unused))stack_t **head,
 	char *op = NULL;
 
 	op = strtok(NULL, " \t \n");
-	if (check_push(op, line) != -1)
+	if (op)
 	{
-		line = atoi(op);
-		add_dnodeint(head, line);
+		if (check_push(op, line) != -1)
+		{
+			line = atoi(op);
+			add_dnodeint(head, line);
+		}
+		else
+		{
+			err_push(line);
+		}
 	}
 	else
-	{
 		err_push(line);
-	}
 }
 /**
  *pall:-function print doublylinked list
