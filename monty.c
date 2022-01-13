@@ -59,7 +59,11 @@ void is_opt(char *buffer, stack_t **head, unsigned int line)
 		}
 		idx++;
 	}
-	if (!(opts[idx].opcode))
+	if (op[0] == '#')
+	{
+		nop(head, line);
+	}
+	else if (!(opts[idx].opcode))
 	{
 		fprintf(stderr, "L%d: unknown instruction %s\n", line, op);
 		free_dlistint(*head);
