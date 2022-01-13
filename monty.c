@@ -46,7 +46,7 @@ void is_opt(char *buffer, __attribute__((unused))stack_t **head,
 	char *op = NULL;
 
 	instruction_t opts[] = {
-		{"push", push}, {"pall", pall}, {NULL, NULL}};
+		{"push", push}, {"pall", pall}, {"pint", pint}, {NULL, NULL}};
 	op = strtok(buffer, " \t");
 	while (opts[idx].opcode)
 	{
