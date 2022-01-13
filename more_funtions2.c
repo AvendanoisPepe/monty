@@ -28,7 +28,7 @@ void sub(stack_t **stack, unsigned int line_number)
  * @stack: double linked list
  * @line_number: number of evaluated line
  */
-void div(stack_t **stack, unsigned int line_number)
+void divi(stack_t **stack, unsigned int line_number)
 {
     stack_t *temp;
 
