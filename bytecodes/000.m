@@ -1,5 +1,6 @@
 
-push 0
+push 0p
+reinaldo
 push 1
 push 2
   push 3

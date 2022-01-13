@@ -7,7 +7,7 @@
  */
 int main(int argc, char *argv[])
 {
-	FILE *red = NULL;
+	
 	stack_t *head = NULL;
 	unsigned int line = 1;
 	char buffer[1024];
@@ -71,8 +71,9 @@ void is_opt(char *buffer, __attribute__((unused))stack_t **head,
 	}
 	if (!(opts[idx].opcode))
 	{
-		fprintf(stderr, "L%d: unknown instruction %s\n", ++line, op);
+		fprintf(stderr, "L%d: unknown instruction %s\n", line, op);
 		free_dlistint(*head);
+		fclose(red);
 		exit(EXIT_FAILURE);
 	}
 }
