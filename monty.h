@@ -59,5 +59,6 @@ void push(__attribute__((unused)) stack_t **head,
 void pall(__attribute__((unused)) stack_t **head,
 		  __attribute__((unused)) unsigned int line);
 void pint(stack_t **stack, unsigned int line_number);
+int empty_str(char *str);
 stack_t *head;
 #endif

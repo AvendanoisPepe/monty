@@ -23,9 +23,10 @@ int main(int argc, char *argv[])
 		fprintf(stderr, "Error: Can't open file %s\n", argv[1]);
 		exit(EXIT_FAILURE);
 	}
-	while (fscanf(red, "%[^\n] ", buffer) != EOF)
+	while (fgets(buffer, 1024, red) != NULL)
 	{
-		is_opt(buffer, &head, line);
+		if (empty_str(buffer))
+			is_opt(buffer, &head, line);
 		line++;
 	}
 	fclose(red);
@@ -47,7 +48,7 @@ void is_opt(char *buffer, __attribute__((unused))stack_t **head,
 
 	instruction_t opts[] = {
 		{"push", push}, {"pall", pall}, {"pint", pint}, {NULL, NULL}};
-	op = strtok(buffer, " \t");
+	op = strtok(buffer, " \t \n");
 	while (opts[idx].opcode)
 	{
 		if (strcmp(opts[idx].opcode, op) == 0)
@@ -70,7 +71,7 @@ void is_opt(char *buffer, __attribute__((unused))stack_t **head,
 	}
 	if (!(opts[idx].opcode))
 	{
-		fprintf(stderr, "L<%d>: unknown instruction <%s>\n", ++line, op);
+		fprintf(stderr, "L%d: unknown instruction %s\n", ++line, op);
 		free_dlistint(*head);
 		exit(EXIT_FAILURE);
 	}
