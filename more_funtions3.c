@@ -50,10 +50,5 @@ void rotl(stack_t **stack, unsigned int line_number)
 		tmp->next = NULL;
 		tmp->prev = tmp2;
 	}
-	else
-	{
-		fprintf(stderr, "L%d: can't rotl, stack empty\n", line_number);
-		fclose(red);
-		exit(EXIT_FAILURE);
-	}
+
 }
