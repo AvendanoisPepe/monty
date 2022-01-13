@@ -61,5 +61,6 @@ void pall(__attribute__((unused)) stack_t **head,
 		  __attribute__((unused)) unsigned int line);
 void pint(stack_t **stack, unsigned int line_number);
 int empty_str(char *str);
+void err_push(unsigned int line);
 stack_t *head;
 #endif

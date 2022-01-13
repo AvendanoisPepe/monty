@@ -1,8 +1,9 @@
 #include "monty.h"
 /**
- *check_push:-function check push valido
+ *check_push:-check push valido
  *@line:-n line
  *@op:-argument
+ *Return: err or not err
  */
 int check_push(char *op, __attribute__((unused))unsigned int line)
 {
@@ -46,4 +47,15 @@ int empty_str(char *str)
 		if (str[i] != '\n' && str[i] != ' ')
 			return (1);
 	return (0);
+}
+/**
+ * err_push - exit error
+ * @line: string.
+ */
+void err_push(unsigned int line)
+{
+	fprintf(stderr, "L%d: usage: push integer\n", line);
+	fclose(red);
+	free_dlistint(head);
+	exit(EXIT_FAILURE);
 }

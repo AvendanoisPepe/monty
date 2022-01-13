@@ -63,12 +63,7 @@ void is_opt(char *buffer, __attribute__((unused))stack_t **head,
 					break;
 				}
 				else
-				{
-					fprintf(stderr, "L%d: usage: push integer\n", line);
-					fclose(red);
-					free_dlistint(*head);
-					exit(EXIT_FAILURE);
-				}
+					err_push(line);
 			}
 			else
 			{
