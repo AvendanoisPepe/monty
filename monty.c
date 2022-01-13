@@ -7,7 +7,7 @@
  */
 int main(int argc, char *argv[])
 {
-	
+
 	stack_t *head = NULL;
 	unsigned int line = 1;
 	char buffer[1024];
