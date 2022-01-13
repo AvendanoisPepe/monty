@@ -95,7 +95,7 @@ void mod(stack_t **stack, unsigned int line_number)
             fclose(red);
             exit(EXIT_FAILURE);
         }
-        (*stack)->next->n = (*stack)->next->n / (*stack)->n;
+        (*stack)->next->n = (*stack)->next->n % (*stack)->n;
         pop(stack, line_number);
         *stack = temp;
     }
