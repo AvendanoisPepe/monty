@@ -62,5 +62,6 @@ void pop(stack_t **head,unsigned int line);
 int empty_str(char *str);
 void err_push(unsigned int line);
 char buffer[1024];
+void swap(stack_t **stack, unsigned int line_number);
 stack_t *head;
 #endif
