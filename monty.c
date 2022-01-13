@@ -45,10 +45,9 @@ void is_opt(char *buffer, stack_t **head, unsigned int line)
 	int idx = 0;
 	char *op = NULL;
 
-	instruction_t opts[] = {
-		{"push", push}, {"pall", pall}, {"pint", pint}, {"pop", pop},
-		{"swap", swap}, {"add", add}, {"nop", nop},
-		{"sub", sub}, {NULL, NULL}};
+	instruction_t opts[] = { {"push", push}, {"pall", pall}, {"pint", pint}, {"pop", pop},
+							 {"swap", swap}, {"add", add}, {"nop", nop},
+							 {"sub", sub}, {"div", div}, {NULL, NULL}};
 	op = strtok(buffer, " \t \n");
 	while (opts[idx].opcode)
 	{
