@@ -25,7 +25,6 @@ void check_push(char *op, __attribute__((unused))unsigned int line)
  */
 void pint(stack_t **stack, unsigned int line_number)
 {
-
 	if (stack == NULL || *stack == NULL)
 	{
 		fprintf(stderr, "L%d: can't pint, stack empty\n", line_number);
