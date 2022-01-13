@@ -99,3 +99,14 @@ void add(stack_t **stack, unsigned int line_number)
 		exit(EXIT_FAILURE);
 	}
 }
+
+/**
+ * nop - do nothing.
+ * @stack: double linked list
+ * @line_number: number of evaluated line
+ */
+void nop(stack_t **stack, unsigned int line_number)
+{
+	(void)(stack);
+	(void)(line_number);
+}
