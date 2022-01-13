@@ -6,7 +6,6 @@
 #include <stdlib.h>
 #include <string.h>
 #include <ctype.h>
-FILE *red;
 /**
  * struct stack_s - doubly linked list representation of a stack (or queue)
  * @n: integer
@@ -58,10 +57,11 @@ void push(stack_t **head, unsigned int line);
  */
 void pall(stack_t **head, unsigned int line);
 void pint(stack_t **stack, unsigned int line_number);
-void pop(stack_t **head,unsigned int line);
+void pop(stack_t **head, unsigned int line);
 int empty_str(char *str);
 void err_push(unsigned int line);
 char buffer[1024];
+void pstr(stack_t **stack, unsigned int line_number);
 void swap(stack_t **stack, unsigned int line_number);
 void add(stack_t **stack, unsigned int line_number);
 void nop(stack_t **stack, unsigned int line_number);
@@ -72,4 +72,5 @@ void mod(stack_t **stack, unsigned int line_number);
 void pchar(stack_t **stack, unsigned int line_number);
 
 stack_t *head;
+FILE *red;
 #endif

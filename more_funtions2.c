@@ -6,51 +6,51 @@
  */
 void sub(stack_t **stack, unsigned int line_number)
 {
-    stack_t *temp;
+	stack_t *temp;
 
-    if (*stack && (*stack)->next)
-    {
-        temp = (*stack)->next;
-        (*stack)->next->n = (*stack)->next->n - (*stack)->n;
-        pop(stack, line_number);
-        *stack = temp;
-    }
-    else
-    {
-        fprintf(stderr, "L%d: can't sub, stack too short\n", line_number);
-        fclose(red);
-        exit(EXIT_FAILURE);
-    }
+	if (*stack && (*stack)->next)
+	{
+		temp = (*stack)->next;
+		(*stack)->next->n = (*stack)->next->n - (*stack)->n;
+		pop(stack, line_number);
+		*stack = temp;
+	}
+	else
+	{
+		fprintf(stderr, "L%d: can't sub, stack too short\n", line_number);
+		fclose(red);
+		exit(EXIT_FAILURE);
+	}
 }
 
 /**
- * div - divs the top two elements of the stack..
+ * divi - divs the top two elements of the stack..
  * @stack: double linked list
  * @line_number: number of evaluated line
  */
 void divi(stack_t **stack, unsigned int line_number)
 {
-    stack_t *temp;
+	stack_t *temp;
 
-    if (*stack && (*stack)->next)
-    {
-        temp = (*stack)->next;
-        if ((*stack)->n == 0)
-        {
-            fprintf(stderr, "L%d: division by zero\n", line_number);
-            fclose(red);
-            exit(EXIT_FAILURE);
-        }
-        (*stack)->next->n = (*stack)->next->n / (*stack)->n;
-        pop(stack, line_number);
-        *stack = temp;
-    }
-    else
-    {
-        fprintf(stderr, "L%d: can't div, stack too short\n", line_number);
-        fclose(red);
-        exit(EXIT_FAILURE);
-    }
+	if (*stack && (*stack)->next)
+	{
+		temp = (*stack)->next;
+		if ((*stack)->n == 0)
+		{
+			fprintf(stderr, "L%d: division by zero\n", line_number);
+			fclose(red);
+			exit(EXIT_FAILURE);
+		}
+		(*stack)->next->n = (*stack)->next->n / (*stack)->n;
+		pop(stack, line_number);
+		*stack = temp;
+	}
+	else
+	{
+		fprintf(stderr, "L%d: can't div, stack too short\n", line_number);
+		fclose(red);
+		exit(EXIT_FAILURE);
+	}
 }
 
 /**
@@ -60,21 +60,21 @@ void divi(stack_t **stack, unsigned int line_number)
  */
 void mul(stack_t **stack, unsigned int line_number)
 {
-    stack_t *temp;
+	stack_t *temp;
 
-    if (*stack && (*stack)->next)
-    {
-        temp = (*stack)->next;
-        (*stack)->next->n = (*stack)->next->n * (*stack)->n;
-        pop(stack, line_number);
-        *stack = temp;
-    }
-    else
-    {
-        fprintf(stderr, "L%d: can't mul, stack too short\n", line_number);
-        fclose(red);
-        exit(EXIT_FAILURE);
-    }
+	if (*stack && (*stack)->next)
+	{
+		temp = (*stack)->next;
+		(*stack)->next->n = (*stack)->next->n * (*stack)->n;
+		pop(stack, line_number);
+		*stack = temp;
+	}
+	else
+	{
+		fprintf(stderr, "L%d: can't mul, stack too short\n", line_number);
+		fclose(red);
+		exit(EXIT_FAILURE);
+	}
 }
 
 /**
@@ -84,51 +84,50 @@ void mul(stack_t **stack, unsigned int line_number)
  */
 void mod(stack_t **stack, unsigned int line_number)
 {
-    stack_t *temp;
+	stack_t *temp;
 
-    if (*stack && (*stack)->next)
-    {
-        temp = (*stack)->next;
-        if ((*stack)->n == 0)
-        {
-            fprintf(stderr, "L%d: division by zero\n", line_number);
-            fclose(red);
-            exit(EXIT_FAILURE);
-        }
-        (*stack)->next->n = (*stack)->next->n % (*stack)->n;
-        pop(stack, line_number);
-        *stack = temp;
-    }
-    else
-    {
-        fprintf(stderr, "L%d: can't mod, stack too short\n", line_number);
-        fclose(red);
-        exit(EXIT_FAILURE);
-    }
+	if (*stack && (*stack)->next)
+	{
+		temp = (*stack)->next;
+		if ((*stack)->n == 0)
+		{
+			fprintf(stderr, "L%d: division by zero\n", line_number);
+			fclose(red);
+			exit(EXIT_FAILURE);
+		}
+		(*stack)->next->n = (*stack)->next->n % (*stack)->n;
+		pop(stack, line_number);
+		*stack = temp;
+	}
+	else
+	{
+		fprintf(stderr, "L%d: can't mod, stack too short\n", line_number);
+		fclose(red);
+		exit(EXIT_FAILURE);
+	}
 }
 
 /**
  * pchar - El valor numerico lo imprime en su valor char
- * 
  * @stack: double linked list
  * @line_number: number of evaluated line
 */
 void pchar(stack_t **stack, unsigned int line_number)
 {
-    if (!(*stack))
-    {
-        fprintf(stderr, "L%d: can't pchar, stack empty\n", line_number);
-        fclose(red);
-        exit(EXIT_FAILURE);
-    }
-    if((*stack)->n >= 0 && (*stack)->n <= 126)
-    {
-        printf("%c\n", (*stack)->n);
-    }
-    else
-    {
-        fprintf(stderr, "L%d: can't pchar, value out of range\n", line_number);
-        fclose(red);
-        exit(EXIT_FAILURE);
-    }
+	if (!(*stack))
+	{
+		fprintf(stderr, "L%d: can't pchar, stack empty\n", line_number);
+		fclose(red);
+		exit(EXIT_FAILURE);
+	}
+	if ((*stack)->n >= 0 && (*stack)->n <= 126)
+	{
+		printf("%c\n", (*stack)->n);
+	}
+	else
+	{
+		fprintf(stderr, "L%d: can't pchar, value out of range\n", line_number);
+		fclose(red);
+		exit(EXIT_FAILURE);
+	}
 }
