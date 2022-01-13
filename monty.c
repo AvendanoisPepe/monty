@@ -46,7 +46,7 @@ void is_opt(char *buffer, stack_t **head, unsigned int line)
 	char *op = NULL;
 
 	instruction_t opts[] = {{"push", push}, {"pall", pall}, {"pint", pint},
-	{"pop", pop}, {"swap", swap}, {"add", add}, {"nop", nop},
+	{"pop", pop}, {"swap", swap}, {"add", add}, {"nop", nop}, {"rotr", rotr},
 	{"sub", sub}, {"div", divi}, {"mul", mul}, {"mod", mod},
 	{"pchar", pchar}, {"pstr", pstr}, {"rotl", rotl}, {NULL, NULL}};
 	op = strtok(buffer, " \t \n");

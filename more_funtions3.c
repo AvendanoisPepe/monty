@@ -61,3 +61,37 @@ void rotl(stack_t **stack, unsigned int line_number)
 	}
 
 }
+/**
+ * rotr - entry point
+ * @stack: stack_t variable
+ * @line_number: unsigned int variable
+ */
+void rotr(stack_t **stack, unsigned int line_number)
+{
+	stack_t *tmp = NULL, *tmp2 = NULL;
+
+	(void)line_number;
+	if (*stack && (*stack)->next && stack)
+	{
+		tmp = *stack;
+		*stack = (*stack)->next;
+		(*stack)->prev = NULL;
+		if ((*stack)->next)
+		{
+			tmp2 = (*stack)->next;
+			while (tmp2->next)
+			{
+				tmp2 = tmp2->next;
+			}
+			tmp2->next = tmp;
+			tmp->prev = tmp2;
+			tmp->next = NULL;
+		}
+		else
+		{
+			(*stack)->next = tmp;
+			tmp->next = NULL;
+			tmp->prev = *stack;
+		}
+	}
+}
