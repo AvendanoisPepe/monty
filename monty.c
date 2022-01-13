@@ -43,10 +43,10 @@ void is_opt(char *buffer, __attribute__((unused))stack_t **head,
 			__attribute__((unused))unsigned int line)
 {
 	int idx = 0;
-	char *op = malloc(sizeof(buffer) * strlen(buffer));
+	char *op = NULL;
+
 	instruction_t opts[] = {
-		{"push", push}, {"pall", pall}, {NULL, NULL}
-	};
+		{"push", push}, {"pall", pall}, {NULL, NULL}};
 	op = strtok(buffer, " \t");
 	while (opts[idx].opcode)
 	{
