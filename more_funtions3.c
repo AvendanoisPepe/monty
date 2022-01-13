@@ -26,3 +26,34 @@ void pstr(stack_t **stack, unsigned int line_number)
 	}
 	putchar('\n');
 }
+/**
+ * rotl - entry point
+ * @stack: stack_t variable
+ * @line_number: unsigned int variable
+ */
+void rotl(stack_t **stack, unsigned int line_number)
+{
+	stack_t *tmp = NULL, *tmp2 = NULL;
+
+	(void)line_number;
+	if (*stack && (*stack)->next)
+	{
+		tmp = *stack;
+		*stack = (*stack)->next;
+		(*stack)->prev = NULL;
+		tmp2 = (*stack)->next;
+		while (tmp2->next)
+		{
+			tmp2 = tmp2->next;
+		}
+		tmp2->next = tmp;
+		tmp->next = NULL;
+		tmp->prev = tmp2;
+	}
+	else
+	{
+		fprintf(stderr, "L%d: can't rotl, stack empty\n", line_number);
+		fclose(red);
+		exit(EXIT_FAILURE);
+	}
+}
