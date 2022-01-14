@@ -126,7 +126,7 @@ julien@ubuntu:~/monty$
 ### Compilation
 Your code will be compiled this way:
 
-[gcc -Wall -Werror -Wextra -pedantic -std=c90 *.c -o monty]
+`gcc -Wall -Werror -Wextra -pedantic -std=c90 *.c -o monty`
 
 ------------
 
