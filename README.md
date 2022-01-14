@@ -141,6 +141,18 @@ The second argument '<file>' is mandatory because it is the file containing the 
 - An error has occurred - (EXIT_FAILURE)   
 
 ------------
+# Authors
+
+## Hugo Machacon: 
+- Git: https://github.com/hmachacom
+- Twitter: https://twitter.com/hmachacom
+- Linkedin: 
+
+## Juan Sebastian Avendaño Gonzalez:
+- Git: https://github.com/AvendanoisPepe
+- Twitter: https://twitter.com/Sebastian_Aven
+- Linkedin: https://www.linkedin.com/in/juan-sebastian-avenda%C3%B1o-gonz%C3%A1lez-8b1185200/
+------------
 
 
-![](https://scontent.fbog4-1.fna.fbcdn.net/v/t39.30808-6/270559680_3074660106132032_2239355789427321092_n.jpg?_nc_cat=111&_nc_rgb565=1&ccb=1-5&_nc_sid=730e14&_nc_ohc=glmLw4tmzhkAX_jfADW&_nc_ht=scontent.fbog4-1.fna&oh=00_AT-u2fQFzKrqv6G_m5ReUqZGXrdlq5ClN7SiSy-fdGRngg&oe=61E14467)
+![](https://scontent.fbog4-2.fna.fbcdn.net/v/t39.30808-6/269979152_3079620875635955_1447984171838636696_n.jpg?_nc_cat=108&_nc_rgb565=1&ccb=1-5&_nc_sid=730e14&_nc_ohc=CAiQW7lFwA0AX_Bsj0u&_nc_ht=scontent.fbog4-2.fna&oh=00_AT8SINudsczyjmtt5FufG1BFt-3EYn7XiEQ3t3Cx8dgc9Q&oe=61E4D79E)
