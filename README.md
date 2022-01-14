@@ -36,6 +36,26 @@ pall$
 julien@ubuntu:~/monty$
 ```
 ------------
+
+### Compilation
+Your code will be compiled this way:
+
+`gcc -Wall -Werror -Wextra -pedantic -std=c90 *.c -o monty`
+
+To run the program type: `./monty <file>`.
+
+## Use
+
+The second argument '<file>' is mandatory because it is the file containing the Monty language bytecodes which normally contains the extension ".m".
+
+### Return:
+
+- If it works correctly - (EXIT_SUCCESS).
+- If there is an error in the file - (EXIT_FAILURE)
+- An error has occurred - (EXIT_FAILURE)   
+
+------------
+
 ### Monty Byte Code Commands
 - push <int> = pushes an element to the stack
 - pall = prints all the values on the stack, starting from the top of the stack
@@ -76,8 +96,6 @@ julien@ubuntu:~/monty$
 ## List of repository files:
 
 ------------
-
-## Personal comments.
 
 |  Functions | Archives  | Description |
 | ------------ | ------------ | ------------ |
@@ -123,22 +141,13 @@ julien@ubuntu:~/monty$
 | more_funtions3.c | rotr(stack_t **stack, unsigned int line_number) |  |
 
 ------------
-### Compilation
-Your code will be compiled this way:
 
-`gcc -Wall -Werror -Wextra -pedantic -std=c90 *.c -o monty`
+## Personal comments.
 
-To run the program type: `./monty <file>`.
+|  Archives | Functions   | Description |
+| ------------ | ------------ | ------------ |
+| monty.c | main(int argc, char *argv[]) |  |
 
-## Use
-
-The second argument '<file>' is mandatory because it is the file containing the Monty language bytecodes which normally contains the extension ".m".
-
-### Return:
-
-- If it works correctly - (EXIT_SUCCESS).
-- If there is an error in the file - (EXIT_FAILURE)
-- An error has occurred - (EXIT_FAILURE)   
 
 ------------
 # Authors
@@ -146,7 +155,7 @@ The second argument '<file>' is mandatory because it is the file containing the 
 ## Hugo Machacon: 
 - Git: https://github.com/hmachacom
 - Twitter: https://twitter.com/hmachacom
-- Linkedin: 
+- Linkedin: https://www.linkedin.com/in/hugo-machacon-5262711bb/
 
 ## Juan Sebastian Avendaño Gonzalez:
 - Git: https://github.com/AvendanoisPepe
