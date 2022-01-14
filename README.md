@@ -133,6 +133,13 @@ To run the program type: `./monty <file>`.
 ## Use
 
 The second argument '<file>' is mandatory because it is the file containing the Monty language bytecodes which normally contains the extension ".m".
+
+### Return:
+
+- If it works correctly - (EXIT_SUCCESS).
+- If there is an error in the file - (EXIT_FAILURE)
+- An error has occurred - (EXIT_FAILURE)   
+
 ------------
 
 
