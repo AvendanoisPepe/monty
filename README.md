@@ -123,6 +123,11 @@ julien@ubuntu:~/monty$
 | more_funtions3.c | rotr(stack_t **stack, unsigned int line_number) |  |
 
 ------------
+### Compilation
+Your code will be compiled this way:
+
+[gcc -Wall -Werror -Wextra -pedantic -std=c90 *.c -o monty]
+
 ------------
 
 
