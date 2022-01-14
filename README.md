@@ -154,6 +154,7 @@ vagrant@ubuntu-focal:~/monti/monty$ ./monty bytecodes/001.m
 3
 2
 1
+vagrant@ubuntu-focal:~/monti/monty$
 ```
 
 ------------
