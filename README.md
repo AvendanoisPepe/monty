@@ -91,12 +91,36 @@ julien@ubuntu:~/monty$
 | 0 | 000.m | File (.m) for testing. |
 | 0 | 001.m | File (.m) for testing. |
 
-
 ------------
 
-|  Point | comments   | level |
+## Repository functions:
+
+|  Archives | Functions   | Description |
 | ------------ | ------------ | ------------ |
-|  |  | Advanced |
+| monty.c | main(int argc, char *argv[]) |  |
+| monty.c | is_opt(char *buffer, stack_t **head, unsigned int line) |  |
+| functions_2.c | check_push(char *op, __attribute__((unused))unsigned int line) |  |
+| functions_2.c | pint(stack_t **stack, unsigned int line_number) |  |
+| functions_2.c | empty_str(char *str) |  |
+| functions_2.c | err_push(unsigned int line) |  |
+| functions.c | push(__attribute__((unused))stack_t **head,	__attribute__((unused))unsigned int line) |  |
+| functions.c | pall(__attribute__((unused))stack_t **head,	__attribute__((unused))unsigned int line) |  |
+| functions.c | *add_dnodeint(stack_t **head, const int n) |  |
+| functions.c | print_dlistint(const stack_t *h) |  |
+| functions.c | free_dlistint(stack_t *head) |  |
+| more_funtions.c | delete_dnodeint_at_index(stack_t **head, unsigned int index) |  |
+| more_funtions.c | pop(stack_t **head, unsigned int line) |  |
+| more_funtions.c | swap(stack_t **stack, unsigned int line_number) |  |
+| more_funtions.c | add(stack_t **stack, unsigned int line_number) |  |
+| more_funtions.c | nop(stack_t **stack, unsigned int line_number) |  |
+| more_funtions2.c | sub(stack_t **stack, unsigned int line_number) |  |
+| more_funtions2.c | divi(stack_t **stack, unsigned int line_number) |  |
+| more_funtions2.c | mul(stack_t **stack, unsigned int line_number) |  |
+| more_funtions2.c | mod(stack_t **stack, unsigned int line_number) |  |
+| more_funtions2.c | pchar(stack_t **stack, unsigned int line_number) |  |
+| more_funtions3.c | pstr(stack_t **stack, unsigned int line_number) |  |
+| more_funtions3.c | rotl(stack_t **stack, unsigned int line_number) |  |
+| more_funtions3.c | rotr(stack_t **stack, unsigned int line_number) |  |
 
 ------------
 ------------
