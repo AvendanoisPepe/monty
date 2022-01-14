@@ -128,6 +128,11 @@ Your code will be compiled this way:
 
 `gcc -Wall -Werror -Wextra -pedantic -std=c90 *.c -o monty`
 
+To run the program type: `./monty <file>`.
+
+## Use
+
+The second argument '<file>' is mandatory because it is the file containing the Monty language bytecodes which normally contains the extension ".m".
 ------------
 
 
