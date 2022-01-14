@@ -1,6 +1,6 @@
 #include "monty.h"
 /**
- *push:-function add new nod doublylinked list
+ *push:- Checks the value to be entered into the double linked list.
  *@head:-Dlink
  *@line:-int
  * Return: long linked list
@@ -35,9 +35,7 @@ void push(__attribute__((unused))stack_t **head,
 void pall(__attribute__((unused))stack_t **head,
 			__attribute__((unused))unsigned int line)
 {
-	/*stack_t *head2 = *head; */
 	print_dlistint(*head);
-
 }
 
 /**
@@ -92,7 +90,7 @@ size_t print_dlistint(const stack_t *h)
 }
 
 /**
- * free_dlistint - free doublylinklist.
+ * free_dlistint - free doubly link list.
  * @head: doubly linkt list
  *
  */

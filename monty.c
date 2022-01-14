@@ -1,6 +1,6 @@
 #include "monty.h"
 /**
- * main - check the code
+ * main - Monty file interpreter.
  *@argc:-n arguments
  *@argv:-argunets
  * Return: Always EXIT_SUCCESS.
@@ -34,7 +34,7 @@ int main(int argc, char *argv[])
 	return (0);
 }
 /**
- * is_opt - check the options
+ * is_opt - Validates the options found in the lines of the  file .m
  *@buffer:-n arguments
  *@head:-dublelinkt
  *@line:-int argument
@@ -42,7 +42,7 @@ int main(int argc, char *argv[])
  */
 void is_opt(char *buffer, stack_t **head, unsigned int line)
 {
-	int idx = 0;
+	int index = 0;
 	char *op = NULL;
 
 	instruction_t opts[] = {{"push", push}, {"pall", pall}, {"pint", pint},
@@ -50,20 +50,20 @@ void is_opt(char *buffer, stack_t **head, unsigned int line)
 	{"sub", sub}, {"div", divi}, {"mul", mul}, {"mod", mod},
 	{"pchar", pchar}, {"pstr", pstr}, {"rotl", rotl}, {NULL, NULL}};
 	op = strtok(buffer, " \t \n");
-	while (opts[idx].opcode)
+	while (opts[index].opcode)
 	{
-		if (strcmp(opts[idx].opcode, op) == 0)
+		if (strcmp(opts[index].opcode, op) == 0)
 		{
-			opts[idx].f(head, line);
+			opts[index].f(head, line);
 			break;
 		}
-		idx++;
+		index++;
 	}
 	if (op[0] == '#')
 	{
 		nop(head, line);
 	}
-	else if (!(opts[idx].opcode))
+	else if (!(opts[index].opcode))
 	{
 		fprintf(stderr, "L%d: unknown instruction %s\n", line, op);
 		free_dlistint(*head);

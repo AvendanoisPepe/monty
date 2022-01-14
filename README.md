@@ -115,30 +115,30 @@ The second argument '<file>' is mandatory because it is the file containing the 
 
 |  Archives | Functions   | Description |
 | ------------ | ------------ | ------------ |
-| monty.c | main(int argc, char *argv[]) |  |
-| monty.c | is_opt(char *buffer, stack_t **head, unsigned int line) |  |
-| functions_2.c | check_push(char *op, __attribute__((unused))unsigned int line) |  |
-| functions_2.c | pint(stack_t **stack, unsigned int line_number) |  |
-| functions_2.c | empty_str(char *str) |  |
-| functions_2.c | err_push(unsigned int line) |  |
-| functions.c | push(__attribute__((unused))stack_t **head,	__attribute__((unused))unsigned int line) |  |
-| functions.c | pall(__attribute__((unused))stack_t **head,	__attribute__((unused))unsigned int line) |  |
-| functions.c | *add_dnodeint(stack_t **head, const int n) |  |
-| functions.c | print_dlistint(const stack_t *h) |  |
-| functions.c | free_dlistint(stack_t *head) |  |
-| more_funtions.c | delete_dnodeint_at_index(stack_t **head, unsigned int index) |  |
-| more_funtions.c | pop(stack_t **head, unsigned int line) |  |
-| more_funtions.c | swap(stack_t **stack, unsigned int line_number) |  |
-| more_funtions.c | add(stack_t **stack, unsigned int line_number) |  |
-| more_funtions.c | nop(stack_t **stack, unsigned int line_number) |  |
-| more_funtions2.c | sub(stack_t **stack, unsigned int line_number) |  |
-| more_funtions2.c | divi(stack_t **stack, unsigned int line_number) |  |
-| more_funtions2.c | mul(stack_t **stack, unsigned int line_number) |  |
-| more_funtions2.c | mod(stack_t **stack, unsigned int line_number) |  |
-| more_funtions2.c | pchar(stack_t **stack, unsigned int line_number) |  |
-| more_funtions3.c | pstr(stack_t **stack, unsigned int line_number) |  |
-| more_funtions3.c | rotl(stack_t **stack, unsigned int line_number) |  |
-| more_funtions3.c | rotr(stack_t **stack, unsigned int line_number) |  |
+| monty.c | main(int argc, char *argv[]) | Monty file interpreter. |
+| monty.c | is_opt(char *buffer, stack_t **head, unsigned int line) | Validates the options found in the lines of the file .m |
+| functions_2.c | check_push(char *op, __attribute__((unused))unsigned int line) | Validates that the push argument is an integer. |
+| functions_2.c | pint(stack_t **stack, unsigned int line_number) | prints the value at the top of the stack. |
+| functions_2.c | empty_str(char *str) | Checks whether the string is a space or a linear jump. |
+| functions_2.c | err_push(unsigned int line) | Exit by error. |
+| functions.c | push(__attribute__((unused))stack_t **head,	__attribute__((unused))unsigned int line) | Checks the value to be entered into the double linked list. |
+| functions.c | pall(__attribute__((unused))stack_t **head,	__attribute__((unused))unsigned int line) | function print doublylinked list |
+| functions.c | *add_dnodeint(stack_t **head, const int n) | Add new nod doublylinked list |
+| functions.c | print_dlistint(const stack_t *h) | Print doublylinked list |
+| functions.c | free_dlistint(stack_t *head) | Free doubly link list. |
+| more_funtions.c | delete_dnodeint_at_index(stack_t **head, unsigned int index) | Removes the indicated node from the double linked list. |
+| more_funtions.c | pop(stack_t **head, unsigned int line) | Validates the node to be deleted. |
+| more_funtions.c | swap(stack_t **stack, unsigned int line_number) | swaps the top two elements of the stack |
+| more_funtions.c | add(stack_t **stack, unsigned int line_number) | adds the top two elements of the stack |
+| more_funtions.c | nop(stack_t **stack, unsigned int line_number) | do nothing |
+| more_funtions2.c | sub(stack_t **stack, unsigned int line_number) | subs the top two elements of the stack. |
+| more_funtions2.c | divi(stack_t **stack, unsigned int line_number) | divs the top two elements of the stack. |
+| more_funtions2.c | mul(stack_t **stack, unsigned int line_number) | muls the top two elements of the stack |
+| more_funtions2.c | mod(stack_t **stack, unsigned int line_number) | mods the top two elements of the stack. |
+| more_funtions2.c | pchar(stack_t **stack, unsigned int line_number) | The numerical value is printed in its char value. |
+| more_funtions3.c | pstr(stack_t **stack, unsigned int line_number) | prints the string starting at the top of the stack |
+| more_funtions3.c | rotl(stack_t **stack, unsigned int line_number) | rotates the stack to the top |
+| more_funtions3.c | rotr(stack_t **stack, unsigned int line_number) | rotates the stack to the bottom. |
 
 ------------
 

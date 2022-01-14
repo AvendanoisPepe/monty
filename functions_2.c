@@ -1,6 +1,6 @@
 #include "monty.h"
 /**
- *check_push:-check push valido
+ *check_push:- Validates that the push argument is an integer.
  *@line:-n line
  *@op:-argument
  *Return: err or not err
@@ -20,9 +20,9 @@ int check_push(char *op, __attribute__((unused))unsigned int line)
 	return (0);
 }
 /**
- * pint - entry point
- * @stack: stack_t variable
- * @line_number: unsigned int variable
+ * pint - prints the value at the top of the stack.
+ * @stack: double list linked to the stack
+ * @line_number: line number
  */
 void pint(stack_t **stack, unsigned int line_number)
 {
@@ -35,7 +35,7 @@ void pint(stack_t **stack, unsigned int line_number)
 	printf("%d\n", (*stack)->n);
 }
 /**
- * empty_str - verify is a string is spaces or
+ * empty_str - Checks whether the string is a space or a linear jump.
  * @str: string.
  * Return: 0 on succesful, 1 if failed.
  */
@@ -49,7 +49,7 @@ int empty_str(char *str)
 	return (0);
 }
 /**
- * err_push - exit error
+ * err_push - Exit by error.
  * @line: string.
  */
 void err_push(unsigned int line)

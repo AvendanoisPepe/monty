@@ -1,6 +1,6 @@
 #include "monty.h"
 /**
- * pstr - entry point
+ * pstr - prints the string starting at the top of the stack
  * @stack: stack_t variable
  * @line_number: unsigned int variable
  */
@@ -27,7 +27,7 @@ void pstr(stack_t **stack, unsigned int line_number)
 	putchar('\n');
 }
 /**
- * rotl - entry point
+ * rotl - rotates the stack to the top
  * @stack: stack_t variable
  * @line_number: unsigned int variable
  */
@@ -62,7 +62,7 @@ void rotl(stack_t **stack, unsigned int line_number)
 
 }
 /**
- * rotr - entry point
+ * rotr - rotates the stack to the bottom.
  * @stack: stack_t variable
  * @line_number: unsigned int variable
  */

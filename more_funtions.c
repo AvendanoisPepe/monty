@@ -1,6 +1,7 @@
 #include "monty.h"
 /**
- *delete_dnodeint_at_index:-funt shearch n nodo
+ *delete_dnodeint_at_index:- Removes the indicated node
+ *from the double linked list.
  *@head: linked list
  *@index: index nodo
  * Return: long linked list
@@ -37,7 +38,7 @@ int delete_dnodeint_at_index(stack_t **head, unsigned int index)
 	return (1);
 }
 /**
- *pop:-funt shearch n nodo
+ *pop:- Validates the node to be deleted.
  *@head: linked list
  *@line: index nodo
  * Return: long linked list
@@ -54,7 +55,7 @@ void pop(stack_t **head, unsigned int line)
 	delete_dnodeint_at_index(head, line);
 }
 /**
- * swap - entry point
+ * swap - swaps the top two elements of the stack
  * @stack: stack_t variable
  * @line_number: unsigned int variable
  */
@@ -77,7 +78,7 @@ void swap(stack_t **stack, unsigned int line_number)
 }
 
 /**
- * add - adds the top two elements of the stack..
+ * add - adds the top two elements of the stack.
  * @stack: double linked list
  * @line_number: number of evaluated line
  */

@@ -74,4 +74,5 @@ void rotl(stack_t **stack, unsigned int line_number);
 void rotr(stack_t **stack, unsigned int line_number);
 stack_t *head;
 FILE *red;
+
 #endif

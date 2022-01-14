@@ -24,7 +24,7 @@ void sub(stack_t **stack, unsigned int line_number)
 }
 
 /**
- * divi - divs the top two elements of the stack..
+ * divi - divs the top two elements of the stack.
  * @stack: double linked list
  * @line_number: number of evaluated line
  */
@@ -54,7 +54,7 @@ void divi(stack_t **stack, unsigned int line_number)
 }
 
 /**
- * mul - muls the top two elements of the stack..
+ * mul - muls the top two elements of the stack
  * @stack: double linked list
  * @line_number: number of evaluated line
  */
@@ -78,7 +78,7 @@ void mul(stack_t **stack, unsigned int line_number)
 }
 
 /**
- * mod - mods the top two elements of the stack..
+ * mod - mods the top two elements of the stack.
  * @stack: double linked list
  * @line_number: number of evaluated line
  */
@@ -108,7 +108,7 @@ void mod(stack_t **stack, unsigned int line_number)
 }
 
 /**
- * pchar - El valor numerico lo imprime en su valor char
+ * pchar - The numerical value is printed in its char value.
  * @stack: double linked list
  * @line_number: number of evaluated line
 */
