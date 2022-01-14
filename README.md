@@ -142,12 +142,19 @@ The second argument '<file>' is mandatory because it is the file containing the 
 
 ------------
 
-## Personal comments.
+## Example of the push and pall function:
 
-|  Archives | Functions   | Description |
-| ------------ | ------------ | ------------ |
-| monty.c | main(int argc, char *argv[]) |  |
-
+```
+vagrant@ubuntu-focal:~/monti/monty$ cat -e bytecodes/001.m
+push 1$
+push 2$
+push 3$
+pall$
+vagrant@ubuntu-focal:~/monti/monty$ ./monty bytecodes/001.m
+3
+2
+1
+```
 
 ------------
 # Authors
