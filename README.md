@@ -36,6 +36,21 @@ pall$
 julien@ubuntu:~/monty$
 ```
 ------------
+### Monty Byte Code Commands
+- push <int> = pushes an element to the stack
+- pall = prints all the values on the stack, starting from the top of the stack
+- pint = prints the value at the top of the stack, followed by a new line
+- pchar = prints the char at the top of the stack, followed by a new line
+- pstr = prints the string starting at the top of the stack, followed by a new line
+- pop = removes the top element of the stack
+- swap = swaps the top two elements of the stack
+- rotl = rotates the stack to the top
+- add = adds the top two elements of the stack
+- sub = subtracts the top element of the stack from the second top element of the stack
+- div = divides the second top element of the stack by the top element of the stack
+- mul = multiplies the second top element of the stack with the top element of the stack
+- mod = computes the rest of the division of the second top element of the stack by the top element of the stack
+- nop = doesn’t do anything
 
 ## List of poinst.
 
@@ -58,7 +73,24 @@ julien@ubuntu:~/monty$
 
 ------------
 
+## List of repository files:
+
+------------
+
 ## Personal comments.
+
+|  Functions | Archives  | Description |
+| ------------ | ------------ | ------------ |
+| 2 | monty.c | Main file in which we go through the (.m) and select the corresponding functions contained in the (.m). |
+| 0 | monty.h | main header file |
+| 4 | functions_2.c | File containing functions to control commands and errors. |
+| 5 | functions.c | File containing functions to control the commands. |
+| 5 | more_funtions.c | File containing functions to control the commands. |
+| 5 | more_funtions2.c | File containing functions to control the commands. |
+| 3 | more_funtions3.c | File containing functions to control the commands. |
+| 0 | 000.m | File (.m) for testing. |
+| 0 | 001.m | File (.m) for testing. |
+
 
 ------------
 
